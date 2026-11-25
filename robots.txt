@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jeremiah10935.github.io/sitemap.xml
+Sitemap: https://jeremiahreeno.github.io/sitemap.xml

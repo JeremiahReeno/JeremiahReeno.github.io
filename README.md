@@ -1,6 +1,6 @@
 # Portofolio Jeremiah Reeno
 
-Website portofolio statis (HTML + CSS + JS, tanpa build). Online di https://jeremiah10935.github.io
+Website portofolio statis (HTML + CSS + JS, tanpa build). Online di https://jeremiahreeno.github.io
 
 ## Isi folder
 - `index.html`: beranda (tentang, keahlian, riwayat, amplop proyek & sertifikat, kontak) + tag SEO
@@ -23,5 +23,5 @@ Website portofolio statis (HTML + CSS + JS, tanpa build). Online di https://jere
 Lewat Laragon: http://localhost/Portofolio
 
 ## Update situs online
-Situs di-hosting GitHub Pages dari repo `jeremiah10935.github.io` (branch `main`, folder root).
+Situs di-hosting GitHub Pages dari repo `jeremiahreeno.github.io` (branch `main`, folder root).
 Cukup `git add .`, `git commit -m "pesan"`, `git push`. GitHub meng-update situs dalam 1-2 menit.
