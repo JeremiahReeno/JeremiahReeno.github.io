@@ -1,6 +1,6 @@
 # Portofolio Jeremiah Reeno
 
-Website portofolio statis (HTML + CSS + JS, tanpa build). Online di https://jeremiah-portofolio.netlify.app
+Website portofolio statis (HTML + CSS + JS, tanpa build). Online di https://jeremiah10935.github.io
 
 ## Isi folder
 - `index.html`: beranda (tentang, keahlian, riwayat, amplop proyek & sertifikat, kontak) + tag SEO
@@ -23,4 +23,5 @@ Website portofolio statis (HTML + CSS + JS, tanpa build). Online di https://jere
 Lewat Laragon: http://localhost/Portofolio
 
 ## Update situs online
-Situs terhubung ke GitHub: cukup `git add .`, `git commit -m "pesan"`, `git push`. Netlify otomatis meng-update dalam 1 menit.
+Situs di-hosting GitHub Pages dari repo `jeremiah10935.github.io` (branch `main`, folder root).
+Cukup `git add .`, `git commit -m "pesan"`, `git push`. GitHub meng-update situs dalam 1-2 menit.
