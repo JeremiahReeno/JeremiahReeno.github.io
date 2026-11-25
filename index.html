@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO utama ===== -->
+<title>Jeremiah Reeno Siauw | UI/UX Designer & Developer</title>
+<meta name="description" content="Portofolio Jeremiah Reeno De Satria Kurniawan Siauw, mahasiswa S1 Sistem Informasi Universitas Dinamika Surabaya. Mendesain UI/UX di Figma lalu membangunnya menjadi website dan aplikasi." data-en-content="Portfolio of Jeremiah Reeno De Satria Kurniawan Siauw, an Information Systems student at Universitas Dinamika Surabaya. Designs UI/UX in Figma, then builds it into websites and apps.">
+<meta name="author" content="Jeremiah Reeno De Satria Kurniawan Siauw">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0a0f1e">
+
+<!-- Google Search Console: tempel meta verifikasi di baris bawah ini setelah deploy -->
+<!-- <meta name="google-site-verification" content="KODE_DARI_GOOGLE"> -->
+
+<!-- Alamat resmi situs. Kalau pindah domain, ganti semua https://jeremiah-portofolio.netlify.app di file ini dan di sitemap.xml -->
+<link rel="canonical" href="https://jeremiah-portofolio.netlify.app/">
+<meta property="og:url" content="https://jeremiah-portofolio.netlify.app/">
+<meta property="og:image" content="https://jeremiah-portofolio.netlify.app/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jeremiah Reeno, UI/UX Designer &amp; Developer">
+<meta name="twitter:image" content="https://jeremiah-portofolio.netlify.app/assets/og-image.jpg">
+
+<!-- Open Graph (tampilan saat link dibagikan di WhatsApp, LinkedIn, dll.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jeremiah Reeno Siauw | UI/UX Designer & Developer">
+<meta property="og:description" content="Mendesain di Figma, membangunnya sendiri jadi website dan aplikasi.">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jeremiah Reeno De Satria Kurniawan Siauw",
+  "alternateName": ["Jeremiah Reeno", "Jeremiah Reeno Siauw"],
+  "jobTitle": "UI/UX Designer & Developer",
+  "url": "https://jeremiah-portofolio.netlify.app/",
+  "image": "https://jeremiah-portofolio.netlify.app/assets/foto-jeremiah.jpg",
+  "address": { "@type": "PostalAddress", "addressLocality": "Surabaya", "addressCountry": "ID" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universitas Dinamika" },
+    { "@type": "HighSchool", "name": "SMAK Stella Maris Surabaya" }
+  ],
+  "sameAs": [
+    "https://github.com/Jeremiah10935",
+    "https://www.instagram.com/jeremiah_de_reeno10/",
+    "https://www.linkedin.com/in/jeremiah-reeno-776329298/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=25">
+<script>(function(d){d.classList.add('js');setTimeout(function(){d.classList.add('anim-off')},4000);
+/* Tema: pilihan tersimpan, kalau belum ada ikut pengaturan perangkat. Dipasang sebelum halaman tampil supaya tidak berkedip. */
+var t;try{t=localStorage.getItem('theme')}catch(e){}
+if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+d.setAttribute('data-theme',t)})(document.documentElement)</script>
+</head>
+<body>
+
+<div id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="brand">Jeremiah Reeno</a>
+  <div class="nav-end">
+    <nav class="links" id="links" aria-label="Navigasi utama" data-en-aria-label="Main navigation">
+      <a href="#about" data-en="About me">Tentang saya</a>
+      <a href="#skills" data-en="Skills">Keahlian</a>
+      <a href="#journey" data-en="Journey">Riwayat</a>
+      <a href="#works" data-en="Portfolio">Portofolio</a>
+      <a href="#contact" class="pill" data-en="Contact">Kontak</a>
+    </nav>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Ganti ke tema terang">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <div class="lang" role="group" aria-label="Pilih bahasa" data-en-aria-label="Choose language">
+      <button type="button" data-lang="id" aria-pressed="true" lang="id" title="Bahasa Indonesia">ID</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Buka menu" data-en-aria-label="Open menu" aria-expanded="false" aria-controls="links"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Perkenalan" data-en-aria-label="Introduction">
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <div class="wrap hero-inner">
+      <p class="hero-kicker hero-anim" data-en="Information Systems student · Universitas Dinamika, Surabaya">S1 Sistem Informasi · Universitas Dinamika, Surabaya</p>
+      <h1 class="hero-title">
+        <span class="line"><span class="hero-anim">Jeremiah</span></span>
+        <span class="line"><span class="hero-anim name-accent">Reeno.</span></span>
+      </h1>
+      <div class="hero-cta hero-anim">
+        <a href="#works" class="btn primary" data-en="View projects">Lihat proyek</a>
+        <a href="#contact" class="btn ghost" data-en="Contact me">Hubungi saya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="sec">
+    <div class="wrap about">
+      <div class="about-card rv">
+        <div class="photo">
+          <img src="assets/foto-jeremiah.jpg" alt="Foto Jeremiah Reeno" data-en-alt="Photo of Jeremiah Reeno" width="900" height="1200" loading="lazy">
+        </div>
+        <dl class="id-meta">
+          <div><dt data-en="Name">Nama</dt><dd>Jeremiah Reeno De Satria Kurniawan Siauw</dd></div>
+          <div><dt data-en="Study">Studi</dt><dd data-en="Information Systems (Bachelor), Universitas Dinamika">S1 Sistem Informasi, Universitas Dinamika</dd></div>
+          <div><dt data-en="Location">Lokasi</dt><dd data-en="Surabaya, East Java">Surabaya, Jawa Timur</dd></div>
+          <div><dt>Status</dt><dd class="ok" data-en="<span class=dot aria-hidden=true></span>Open to internships &amp; collaboration"><span class="dot" aria-hidden="true"></span>Terbuka untuk magang & kolaborasi</dd></div>
+        </dl>
+      </div>
+      <div>
+        <p class="label rv" data-en="01 / About me">01 / Tentang saya</p>
+        <h2 class="h2 rv" data-en="Hi, I&#39;m <span class=hl>Jeremiah Reeno</span>">Halo, saya <span class="hl">Jeremiah Reeno</span></h2>
+        <p class="lead rv" data-en="I&#39;m a student at the Faculty of Technology and Informatics, Universitas Dinamika, focusing on UI/UX design and coding. I design interfaces in Figma, then build them myself into websites and apps that people can actually use.">Saya mahasiswa Fakultas Teknologi dan Informatika, Universitas Dinamika, dengan fokus di desain UI/UX dan coding. Saya merancang tampilan di Figma, lalu membangunnya sendiri menjadi website atau aplikasi yang bisa dipakai.</p>
+        <div class="about-cta rv">
+          <button type="button" class="btn primary" id="openCv" aria-haspopup="dialog" aria-controls="cvDialog" data-open="cvDialog" data-fallback="assets/cv-jeremiah.jpg" data-en="View CV">Lihat CV</button>
+          <a class="btn ghost" href="assets/cv-jeremiah.jpg" download="CV-Jeremiah-Reeno-Siauw.jpg" data-en="Download CV">Unduh CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="sec">
+    <div class="wrap">
+      <p class="label rv" data-en="02 / Skills">02 / Keahlian</p>
+      <h2 class="h2 rv" data-en="Hard skills <span class=muted>&amp; soft skills</span>">Keahlian teknis <span class="muted nw">& non-teknis</span></h2>
+      <div class="skills">
+        <article class="skill-col rv">
+          <h3 data-en="Hard skills">Keahlian teknis</h3>
+          <ul class="skill-list">
+            <li><span>Figma</span></li>
+            <li><span>HTML & CSS</span></li>
+            <li><span>PHP</span></li>
+            <li><span>Laravel</span></li>
+            <li><span>MySQL & SQL</span></li>
+          </ul>
+        </article>
+        <article class="skill-col soft rv">
+          <h3 data-en="Soft skills">Keahlian non-teknis</h3>
+          <ul class="chips">
+            <li data-en="Teamwork">Kerja sama tim</li><li data-en="Time management">Manajemen waktu</li><li data-en="Discipline">Disiplin</li><li data-en="Problem solving">Pemecahan masalah</li><li data-en="Communication">Komunikasi</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY: kiri = pengalaman kerja + proyek pengembangan, kanan = organisasi + pendidikan ===== -->
+  <section id="journey" class="sec">
+    <div class="wrap">
+      <p class="label rv" data-en="03 / Journey">03 / Riwayat</p>
+      <h2 class="h2 rv" data-en="Experience <span class=muted>&amp; education</span>">Pengalaman <span class="muted">& pendidikan</span></h2>
+      <div class="journey">
+        <div>
+          <h3 class="col-title rv" data-en="Work experience">Pengalaman kerja</h3>
+          <ol class="timeline">
+            <li class="tl-item">
+              <p class="tl-when" data-en="Mar 2026 · Jul 2026 <span class=kind>Internship</span>">Mar 2026 · Jul 2026 <span class="kind">Magang</span></p>
+              <h4 data-en="UI/UX Design Intern">Magang Desain UI/UX</h4>
+              <p class="tl-role">CV. Jaya Mitra Chemical</p>
+              <ul class="tl-points">
+                <li data-en="Designed the UI/UX for a web-based e-catalog and ordering system.">Merancang UI/UX untuk sistem E-Katalog dan Pemesanan berbasis web.</li>
+                <li data-en="Conducted user research using the Design Thinking approach.">Melakukan riset pengguna dengan pendekatan Design Thinking.</li>
+                <li data-en="Built interactive prototypes and high-fidelity designs.">Mengembangkan prototipe interaktif dan desain high-fidelity.</li>
+              </ul>
+            </li>
+            <li class="tl-item">
+              <p class="tl-when" data-en="Sep 2026 <span class=kind>Event, 1 month</span>">Sep 2026 <span class="kind">Event, 1 bulan</span></p>
+              <h4 data-en="Guest Relations &amp; Event Operations">Guest Relations & Operasional Event</h4>
+              <p class="tl-role">Event Disney Cruise · Pakuwon Mall, Surabaya</p>
+              <ul class="tl-points">
+                <li data-en="Welcomed guests arriving at the event area.">Menyambut tamu yang datang ke area event.</li>
+                <li data-en="Managed visitor queues.">Mengatur antrean pengunjung.</li>
+              </ul>
+            </li>
+            <li class="tl-item now">
+              <p class="tl-when" data-en="2020 · present <span class=kind>Freelance</span>">2020 · sekarang <span class="kind">Lepas</span></p>
+              <h4 data-en="Packing Staff">Staf Pengemasan</h4>
+              <ul class="tl-points">
+                <li data-en="Checked the condition and completeness of goods, then packed them to standard so they stay safe during shipping.">Memeriksa kondisi dan kelengkapan barang, lalu mengemasnya sesuai standar agar aman selama pengiriman.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h3 class="col-title next rv" data-en="Development projects">Proyek pengembangan</h3>
+          <ol class="timeline">
+            <li class="tl-item now">
+              <p class="tl-when" data-en="Nov 2026 · present <span class=kind>Collaborative project</span>">Nov 2026 · sekarang <span class="kind">Proyek kolaboratif</span></p>
+              <h4 data-en="Llyonne Store: Automated Game Top-Up Website">Llyonne Store: Website Top-Up Game Otomatis</h4>
+              <p class="tl-role" data-en="Developer · Laravel 13, PHP, MySQL · In development">Developer · Laravel 13, PHP, MySQL · Dalam pengembangan</p>
+              <ul class="tl-points">
+                <li data-en="Built the full flow from the game catalog to automatic item delivery once payment is complete.">Membangun alur lengkap dari katalog game sampai item terkirim otomatis setelah pembayaran lunas.</li>
+                <li data-en="Integrated the Midtrans payment API and the Digiflazz supplier API, including webhooks and failed-order handling.">Mengintegrasikan API pembayaran Midtrans dan API supplier Digiflazz, termasuk webhook dan penanganan pesanan gagal.</li>
+              </ul>
+              <div class="tl-links">
+                <a class="tl-link" href="project-llyonne.html" data-en="View project details <span aria-hidden=true>→</span>">Lihat detail proyek <span aria-hidden="true">→</span></a>
+                <a class="tl-link" href="https://github.com/dionisiusnp/topup-game" target="_blank" rel="noopener" data-en="Repo on GitHub <span aria-hidden=true>↗</span><span class=sr>(new tab)</span>">Repo di GitHub <span aria-hidden="true">↗</span><span class="sr">(tab baru)</span></a>
+              </div>
+            </li>
+            <li class="tl-item now">
+              <p class="tl-when" data-en="2026 · present <span class=kind>Team project, 8 people</span>">2026 · sekarang <span class="kind">Proyek tim, 8 orang</span></p>
+              <h4>AI Academic Advisor</h4>
+              <p class="tl-role" data-en="Developer · Laravel 12, Python, MySQL · In development">Developer · Laravel 12, Python, MySQL · Dalam pengembangan</p>
+              <ul class="tl-points">
+                <li data-en="Developing a web-based academic assistant that helps Information Systems students plan their courses, choose a concentration, and check final project eligibility.">Mengembangkan asisten akademik berbasis web yang membantu mahasiswa S1 Sistem Informasi menyusun KRS, memilih peminatan, dan memeriksa kelayakan Tugas Akhir.</li>
+                <li data-en="Processing academic data: 68 courses from the official curriculum and CSV imports from SIAKAD.">Mengolah data akademik: 68 mata kuliah dari kurikulum resmi dan impor data SIAKAD dari CSV.</li>
+              </ul>
+              <div class="tl-links">
+                <a class="tl-link" href="project-ai-advisor.html" data-en="View project details <span aria-hidden=true>→</span>">Lihat detail proyek <span aria-hidden="true">→</span></a>
+                <!-- REPO PRIVATE: hapus tanda komentar ini setelah repo ai-academic-advisor dijadikan public
+                <a class="tl-link" href="https://github.com/Jeremiah10935/ai-academic-advisor" target="_blank" rel="noopener" data-en="Repo on GitHub <span aria-hidden=true>↗</span><span class=sr>(new tab)</span>">Repo di GitHub <span aria-hidden="true">↗</span><span class="sr">(tab baru)</span></a>
+                -->
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3 class="col-title rv" data-en="Organization">Organisasi</h3>
+          <ol class="timeline">
+            <li class="tl-item">
+              <p class="tl-when">Feb 2026</p>
+              <h4 data-en="Catering &amp; Logistics Staff">Staf Divisi Konsumsi & Logistik</h4>
+              <p class="tl-role">Dinamika Cyber Sport</p>
+              <ul class="tl-points">
+                <li data-en="Managed the operational needs of events and coordinated with vendors so everything ran smoothly.">Mengelola kebutuhan operasional kegiatan dan berkoordinasi dengan vendor agar acara berjalan lancar.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h3 class="col-title next rv" data-en="Education">Pendidikan</h3>
+          <ol class="timeline">
+            <li class="tl-item now">
+              <p class="tl-when" data-en="Aug 2023 · present">Agu 2023 · sekarang</p>
+              <h4>Universitas Dinamika, Surabaya</h4>
+              <p class="tl-role" data-en="Bachelor of Information Systems · GPA 3.65 / 4.00">S1 Sistem Informasi · IPK 3.65 / 4.00</p>
+              <p class="tl-desc" data-en="Faculty of Technology and Informatics.">Fakultas Teknologi dan Informatika.</p>
+            </li>
+            <li class="tl-item">
+              <p class="tl-when">2019 · 2023</p>
+              <h4>SMAK Stella Maris Surabaya</h4>
+              <p class="tl-role" data-en="Science major">Jurusan IPA</p>
+            </li>
+          </ol>
+          <h3 class="col-title next rv" data-en="Training">Pelatihan</h3>
+          <ol class="timeline">
+            <li class="tl-item">
+              <p class="tl-when" data-en="Nov 2026 <span class=kind>Online class, 10 hours</span>">Nov 2026 <span class="kind">Kelas online, 10 jam</span></p>
+              <h4>Short Class UI/UX Research Design</h4>
+              <p class="tl-role">KarirNex by PT Ebiz Karisma Internasional · Batch 2</p>
+              <ul class="tl-points">
+                <li data-en="UI/UX research fundamentals and user needs analysis.">Dasar-dasar riset UI/UX dan analisis kebutuhan pengguna.</li>
+                <li data-en="Wireframing with Figma and landing page design, closed with a mini project.">Pembuatan wireframe dengan Figma dan desain landing page, ditutup dengan mini project.</li>
+              </ul>
+              <a class="tl-link" href="assets/sertifikat/shortclass-uiux-research-design.pdf" target="_blank" rel="noopener" data-en="View certificate <span aria-hidden=true>↗</span><span class=sr>(PDF, new tab)</span>">Lihat sertifikat <span aria-hidden="true">↗</span><span class="sr">(PDF, tab baru)</span></a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO: dua amplop. Hover/fokus = amplop terbuka, isinya mengintip; klik = masuk ke folder ===== -->
+  <section id="works" class="sec">
+    <div class="wrap">
+      <p class="label rv" data-en="04 / Portfolio">04 / Portofolio</p>
+      <h2 class="h2 rv" data-en="Projects <span class=muted>&amp; certificates</span>">Proyek <span class="muted">& sertifikat</span></h2>
+      <p class="body rv"><span class="hint-hover" data-en="Hover over an envelope to peek inside, then click to open it.">Arahkan kursor ke amplop untuk mengintip isinya, lalu klik untuk membuka.</span><span class="hint-touch" data-en="Scroll until an envelope opens to peek inside, then tap to open it.">Gulir sampai amplop terbuka untuk mengintip isinya, lalu ketuk untuk membuka.</span></p>
+      <div class="envs">
+        <a class="env rv" href="projects.html" aria-label="Buka folder Proyek (4 proyek)" data-en-aria-label="Open the Projects folder (4 projects)">
+          <div class="env-body" aria-hidden="true">
+            <span class="env-back"></span>
+            <span class="env-flap-back"></span>
+            <div class="env-letters">
+              <span class="letter"><img src="assets/jcafe-home.jpg" alt="" loading="lazy"></span>
+              <span class="letter"><img src="assets/tabunganku-dashboard.jpg" alt="" loading="lazy"></span>
+              <span class="letter"><img src="assets/jcafe-menu.jpg" alt="" loading="lazy"></span>
+            </div>
+            <span class="env-front"><span class="env-to" data-en="Projects">Proyek</span><span class="env-stamp">04</span></span>
+            <span class="env-flap"></span>
+            <span class="env-seal">P</span>
+          </div>
+          <div class="env-cap">
+            <div><h3 data-en="Projects">Proyek</h3><p data-en="4 projects">4 proyek</p></div>
+            <span class="env-go" data-en="Open folder <span aria-hidden=true>→</span>">Buka folder <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+        <a class="env rv" href="certificates.html" aria-label="Buka folder Sertifikat (4 sertifikat)" data-en-aria-label="Open the Certificates folder (4 certificates)">
+          <div class="env-body" aria-hidden="true">
+            <span class="env-back"></span>
+            <span class="env-flap-back"></span>
+            <div class="env-letters">
+              <span class="letter"><img src="assets/sertifikat/career-in-website-development.jpg" alt="" loading="lazy"></span>
+              <span class="letter"><img src="assets/sertifikat/shortclass-uiux-research-design.jpg" alt="" loading="lazy"></span>
+              <span class="letter"><img src="assets/sertifikat/frontend-development-introduction.jpg" alt="" loading="lazy"></span>
+            </div>
+            <span class="env-front"><span class="env-to" data-en="Certificates">Sertifikat</span><span class="env-stamp">04</span></span>
+            <span class="env-flap"></span>
+            <span class="env-seal">C</span>
+          </div>
+          <div class="env-cap">
+            <div><h3 data-en="Certificates">Sertifikat</h3><p data-en="4 certificates">4 sertifikat</p></div>
+            <span class="env-go" data-en="Open folder <span aria-hidden=true>→</span>">Buka folder <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="sec contact">
+    <div class="wrap">
+      <div class="contact-card rv">
+        <p class="label" data-en="05 / Contact">05 / Kontak</p>
+        <h2 class="h2" data-en="Have a project or <span class=muted>an internship offer?</span>">Punya proyek atau <span class="muted">tawaran magang?</span></h2>
+        <p class="body" data-en="Send me a message or say hi on any of the accounts below.">Kirim pesan atau sapa saya lewat salah satu akun di bawah.</p>
+        <ul class="social-icons">
+          <li><a class="sicon" href="https://wa.me/6282119880635" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp (tab baru)" data-en-aria-label="WhatsApp (new tab)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></li>
+          <li><a class="sicon" href="https://www.instagram.com/jeremiah_de_reeno10/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram (tab baru)" data-en-aria-label="Instagram (new tab)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a></li>
+          <li><a class="sicon" href="https://discord.com/users/1412471383564488736" target="_blank" rel="noopener" title="Discord" aria-label="Discord (tab baru)" data-en-aria-label="Discord (new tab)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></a></li>
+          <li><a class="sicon" href="https://www.linkedin.com/in/jeremiah-reeno-776329298/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn (tab baru)" data-en-aria-label="LinkedIn (new tab)"><svg viewBox="0 0 128 128" fill="currentColor" aria-hidden="true"><path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"/></svg></a></li>
+          <li><a class="sicon" href="https://github.com/Jeremiah10935" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub (tab baru)" data-en-aria-label="GitHub (new tab)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="year">2026</span> Jeremiah Reeno De Satria Kurniawan Siauw</span>
+  <a href="#top" data-en="Back to top">Kembali ke atas</a>
+</footer>
+
+<!-- ===== Popup CV ===== -->
+<dialog class="cv-dialog" id="cvDialog" aria-labelledby="cvTitle">
+  <div class="cv-bar">
+    <h2 id="cvTitle">CV Jeremiah Reeno Siauw</h2>
+    <div class="cv-actions">
+      <a class="btn ghost sm" href="assets/cv-jeremiah.jpg" download="CV-Jeremiah-Reeno-Siauw.jpg" data-en="Download">Unduh</a>
+      <button type="button" class="btn ghost sm" id="closeCv" data-close data-en="Close">Tutup</button>
+    </div>
+  </div>
+  <div class="cv-body" data-lenis-prevent>
+    <img src="assets/cv-jeremiah.jpg" alt="CV Jeremiah Reeno Siauw: ringkasan profil, pendidikan, pengalaman kerja, organisasi, dan skill" data-en-alt="Jeremiah Reeno Siauw's CV: profile summary, education, work experience, organizations, and skills" width="1414" height="2000" loading="lazy">
+  </div>
+</dialog>
+
+<script src="i18n.js?v=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="script.js?v=6" defer></script>
+</body>
+</html>

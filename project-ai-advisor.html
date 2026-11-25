@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Academic Advisor | Jeremiah Reeno Siauw</title>
+<meta name="description" content="AI Academic Advisor: asisten akademik berbasis web untuk mahasiswa S1 Sistem Informasi Universitas Dinamika, dibangun dengan Laravel 12, MySQL, dan Python." data-en-content="AI Academic Advisor: a web-based academic assistant for Information Systems students at Universitas Dinamika, built with Laravel 12, MySQL, and Python.">
+<link rel="canonical" href="https://jeremiah-portofolio.netlify.app/project-ai-advisor.html">
+<meta property="og:url" content="https://jeremiah-portofolio.netlify.app/project-ai-advisor.html">
+<meta property="og:image" content="https://jeremiah-portofolio.netlify.app/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0a0f1e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=25">
+<script>(function(d){d.classList.add('js');setTimeout(function(){d.classList.add('anim-off')},4000);
+/* Tema: pilihan tersimpan, kalau belum ada ikut pengaturan perangkat. Dipasang sebelum halaman tampil supaya tidak berkedip. */
+var t;try{t=localStorage.getItem('theme')}catch(e){}
+if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+d.setAttribute('data-theme',t)})(document.documentElement)</script>
+</head>
+<body class="sub">
+
+<div id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">Jeremiah Reeno</a>
+  <div class="nav-end">
+    <nav class="links" id="links" aria-label="Navigasi utama" data-en-aria-label="Main navigation">
+      <a href="index.html#about" data-en="About me">Tentang saya</a>
+      <a href="index.html#skills" data-en="Skills">Keahlian</a>
+      <a href="index.html#journey" data-en="Journey">Riwayat</a>
+      <a href="index.html#works" aria-current="page" data-en="Portfolio">Portofolio</a>
+      <a href="index.html#contact" class="pill" data-en="Contact">Kontak</a>
+    </nav>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Ganti ke tema terang">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <div class="lang" role="group" aria-label="Pilih bahasa" data-en-aria-label="Choose language">
+      <button type="button" data-lang="id" aria-pressed="true" lang="id" title="Bahasa Indonesia">ID</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Buka menu" data-en-aria-label="Open menu" aria-expanded="false" aria-controls="links"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <header class="page-head detail-head">
+    <a class="crumb" href="projects.html" data-en="<span aria-hidden=true>←</span> Back to Projects"><span aria-hidden="true">←</span> Kembali ke Proyek</a>
+    <p class="label" data-en="Web app · Team project">Aplikasi web · Proyek tim</p>
+    <h1 class="page-title">AI Academic Advisor</h1>
+    <p class="lead" data-en="A web-based academic assistant for Information Systems students at Universitas Dinamika. It helps students plan their courses within prerequisites and credit limits, choose a concentration, and check their final project eligibility. It also includes a campus information chatbot that finds answers in the official guideline documents without using a third-party LLM.">Asisten akademik berbasis web untuk mahasiswa S1 Sistem Informasi Universitas Dinamika. Sistem ini membantu mahasiswa menyusun KRS sesuai prasyarat dan batas SKS, memilih peminatan, dan memeriksa kelayakan Tugas Akhir. Ada juga chatbot informasi kampus yang mencari jawaban dari dokumen pedoman resmi tanpa memakai LLM pihak ketiga.</p>
+    <p class="body" data-en="Built by a team of 8 (Kelompok Roblox). I help develop the web application and process the academic data.">Dikerjakan oleh tim beranggotakan 8 orang (Kelompok Roblox). Saya ikut mengembangkan aplikasi web dan mengolah data akademiknya.</p>
+    <div class="feature-cta" hidden>
+      <!-- REPO PRIVATE: hapus tanda komentar ini setelah repo ai-academic-advisor dijadikan public
+      <a class="btn primary" href="https://github.com/Jeremiah10935/ai-academic-advisor" target="_blank" rel="noopener" data-en="View repo on GitHub <span aria-hidden=true>&nbsp;↗</span><span class=sr>(new tab)</span>">Lihat repo di GitHub <span aria-hidden="true">&nbsp;↗</span><span class="sr">(tab baru)</span></a>
+      -->
+    </div>
+    <dl class="facts">
+      <div><dt data-en="Role">Peran</dt><dd>Developer</dd></div>
+      <div><dt data-en="Year">Tahun</dt><dd>2026</dd></div>
+      <div><dt>Status</dt><dd><span class="status" data-en="In development">Dalam pengembangan</span></dd></div>
+      <div><dt data-en="Team">Tim</dt><dd data-en="8 people">8 orang</dd></div>
+    </dl>
+  </header>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="Technology">Teknologi</h2>
+    <ul class="tools rv">
+      <li><img src="assets/tools/laravel.svg" alt="" width="36" height="36">Laravel 12</li>
+      <li><img src="assets/tools/php.svg" alt="" width="36" height="36">PHP</li>
+      <li><span class="ti" aria-hidden="true">B</span><span>Blade<small data-en="Laravel templates">Template Laravel</small></span></li>
+      <li><img src="assets/tools/tailwind.svg" alt="" width="36" height="36">Tailwind CSS</li>
+      <li><img src="assets/tools/mysql.svg" alt="" width="36" height="36">MySQL</li>
+      <li><img src="assets/tools/python.svg" alt="" width="36" height="36">Python</li>
+      <li><img src="assets/tools/fastapi.svg" alt="" width="36" height="36"><span>FastAPI<small data-en="planned">direncanakan</small></span></li>
+      <li><img src="assets/tools/huggingface.svg" alt="" width="36" height="36"><span>Sentence-Transformers<small data-en="planned">direncanakan</small></span></li>
+      <li><span class="ti" aria-hidden="true">PU</span><span>PHPUnit<small data-en="67 automated tests">67 tes otomatis</small></span></li>
+      <li><img src="assets/tools/git.svg" alt="" width="36" height="36">Git</li>
+      <li><img src="assets/tools/github.svg" alt="" width="36" height="36">GitHub</li>
+    </ul>
+  </section>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="What was built">Apa saja yang dikerjakan</h2>
+    <ul class="points rv">
+      <li data-en="Login and access control for four roles: Student, Academic Advisor, Final Project Supervisor, and Program Admin. Users sign in with their student or lecturer ID, and each page can only be opened by the roles allowed to see it.">Login dan hak akses empat peran: Mahasiswa, Dosen Wali, Dosen Pembimbing TA, dan Admin Prodi. Masuk memakai NIM atau NIDN, dan setiap halaman hanya bisa dibuka peran yang berhak.</li>
+      <li data-en="Reference data management for the Head of Program: courses, prerequisites, credit limit rules, concentrations, lecturers, and final project requirements. The system rejects circular prerequisites and overlapping GPA ranges.">Pengelolaan data referensi untuk Kaprodi: mata kuliah, prasyarat, aturan batas SKS, peminatan, dosen, dan ketentuan Tugas Akhir. Sistem menolak prasyarat yang berputar dan rentang IPS yang bertabrakan.</li>
+      <li data-en="The 2025 Information Systems curriculum from the official Academic Guidelines: 68 courses, credit rules (Article 14), and the grading scale (Article 16). The data is cross-checked against SIAKAD, and every correction is logged.">Kurikulum S1 SI 2025 dari Pedoman Akademik resmi: 68 mata kuliah, aturan SKS (Pasal 14), dan skala nilai (Pasal 16). Data diperiksa ulang dengan data SIAKAD, dan setiap koreksi dicatat.</li>
+      <li data-en="SIAKAD data import from CSV: upload, preview, then import. Every row is validated, failed rows are reported with the reason, and existing data is updated without duplicates. The structure is ready to connect directly to the SIAKAD API later.">Impor data SIAKAD dari CSV: alurnya unggah, pratinjau, lalu impor. Setiap baris diperiksa, baris yang gagal dilaporkan beserta alasannya, dan data lama diperbarui tanpa duplikat. Strukturnya sudah disiapkan supaya nanti bisa langsung tersambung ke API SIAKAD.</li>
+      <li data-en="Test data: 200 students with 5,784 grade records, created by a generator that follows the curriculum and prerequisites.">Data uji: 200 mahasiswa dengan 5.784 riwayat nilai, dibuat oleh generator yang mengikuti kurikulum dan prasyarat.</li>
+      <li data-en="Interface: responsive on laptops and phones, with attention to accessibility (contrast, keyboard navigation, form labels).">Tampilan: responsif di laptop maupun ponsel, dan memperhatikan aksesibilitas (kontras, navigasi keyboard, label formulir).</li>
+      <li data-en="Testing: 67 automated tests with PHPUnit.">Pengujian: 67 tes otomatis dengan PHPUnit.</li>
+    </ul>
+  </section>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="Result">Hasil</h2>
+    <!-- Ganti kotak ini dengan screenshot: <div class="screens"> berisi <figure class="screen"><img src="assets/advisor-....jpg" alt="..."></figure> -->
+    <div class="result-empty rv" data-en="AI Academic Advisor screenshots coming soon">Tampilan AI Academic Advisor menyusul</div>
+  </section>
+
+  <nav class="detail-end rv" aria-label="Navigasi proyek" data-en-aria-label="Project navigation">
+    <a class="btn ghost" href="projects.html" data-en="<span aria-hidden=true>←&nbsp;</span> All projects"><span aria-hidden="true">←&nbsp;</span> Semua proyek</a>
+    <!-- REPO PRIVATE: hapus tanda komentar ini setelah repo ai-academic-advisor dijadikan public
+    <a class="btn primary" href="https://github.com/Jeremiah10935/ai-academic-advisor" target="_blank" rel="noopener" data-en="View repo on GitHub <span aria-hidden=true>&nbsp;↗</span><span class=sr>(new tab)</span>">Lihat repo di GitHub <span aria-hidden="true">&nbsp;↗</span><span class="sr">(tab baru)</span></a>
+    -->
+  </nav>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="year">2026</span> Jeremiah Reeno De Satria Kurniawan Siauw</span>
+  <a href="index.html" data-en="Home">Beranda</a>
+</footer>
+
+<script src="i18n.js?v=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="script.js?v=6" defer></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="J-Cafe · UI/UX Case | Jeremiah Reeno Siauw">J-Cafe · Studi Kasus UI/UX | Jeremiah Reeno Siauw</title>
+<meta name="description" content="J-Cafe: desain aplikasi pemesanan menu kafe, proyek UAS 2025 yang dirancang di Figma oleh Jeremiah Reeno Siauw." data-en-content="J-Cafe: a café ordering app design, a 2025 final exam project designed in Figma by Jeremiah Reeno Siauw.">
+<link rel="canonical" href="https://jeremiah-portofolio.netlify.app/project-jcafe.html">
+<meta property="og:url" content="https://jeremiah-portofolio.netlify.app/project-jcafe.html">
+<meta property="og:image" content="https://jeremiah-portofolio.netlify.app/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0a0f1e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=25">
+<script>(function(d){d.classList.add('js');setTimeout(function(){d.classList.add('anim-off')},4000);
+/* Tema: pilihan tersimpan, kalau belum ada ikut pengaturan perangkat. Dipasang sebelum halaman tampil supaya tidak berkedip. */
+var t;try{t=localStorage.getItem('theme')}catch(e){}
+if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+d.setAttribute('data-theme',t)})(document.documentElement)</script>
+</head>
+<body class="sub">
+
+<div id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">Jeremiah Reeno</a>
+  <div class="nav-end">
+    <nav class="links" id="links" aria-label="Navigasi utama" data-en-aria-label="Main navigation">
+      <a href="index.html#about" data-en="About me">Tentang saya</a>
+      <a href="index.html#skills" data-en="Skills">Keahlian</a>
+      <a href="index.html#journey" data-en="Journey">Riwayat</a>
+      <a href="index.html#works" aria-current="page" data-en="Portfolio">Portofolio</a>
+      <a href="index.html#contact" class="pill" data-en="Contact">Kontak</a>
+    </nav>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Ganti ke tema terang">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <div class="lang" role="group" aria-label="Pilih bahasa" data-en-aria-label="Choose language">
+      <button type="button" data-lang="id" aria-pressed="true" lang="id" title="Bahasa Indonesia">ID</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Buka menu" data-en-aria-label="Open menu" aria-expanded="false" aria-controls="links"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <header class="page-head detail-head">
+    <a class="crumb" href="projects.html" data-en="<span aria-hidden=true>←</span> Back to Projects"><span aria-hidden="true">←</span> Kembali ke Proyek</a>
+    <p class="label" data-en="UI/UX Design · Mobile app · Final exam project">Desain UI/UX · Aplikasi mobile · Proyek UAS</p>
+    <h1 class="page-title">J-Cafe</h1>
+    <p class="lead" data-en="An ordering app design for a café. Users browse the menu catalog, add orders to the cart, then pay and get a receipt, all in one app.">Desain aplikasi pemesanan untuk kafe. Pengguna melihat katalog menu, memasukkan pesanan ke keranjang, lalu membayar dan menerima struk, semuanya dari satu aplikasi.</p>
+    <div class="feature-cta">
+      <a class="btn primary" href="https://www.figma.com/design/v6lZhGyBujb4ULgkrUY9Dt/23410100005_POSApp_UAS_2025?node-id=0-1" target="_blank" rel="noopener" data-en="Open in Figma <span aria-hidden=true>&nbsp;↗</span><span class=sr>(new tab)</span>">Buka di Figma <span aria-hidden="true">&nbsp;↗</span><span class="sr">(tab baru)</span></a>
+      <button type="button" class="btn ghost" data-open="figmaJcafe" data-fallback="https://www.figma.com/design/v6lZhGyBujb4ULgkrUY9Dt/23410100005_POSApp_UAS_2025?node-id=0-1" aria-haspopup="dialog" aria-controls="figmaJcafe" data-en="Preview on this page">Pratinjau di halaman ini</button>
+    </div>
+    <dl class="facts">
+      <div><dt data-en="Role">Peran</dt><dd data-en="UI/UX Designer">Desainer UI/UX</dd></div>
+      <div><dt>Platform</dt><dd data-en="Mobile app">Aplikasi mobile</dd></div>
+      <div><dt data-en="Tools">Alat</dt><dd>Figma</dd></div>
+      <div><dt data-en="Context">Konteks</dt><dd data-en="Final exam project 2025">Proyek UAS 2025</dd></div>
+    </dl>
+  </header>
+
+  <section class="detail-sec">
+    <div class="screens all rv">
+      <figure class="screen"><img src="assets/jcafe-login.jpg" alt="J-Cafe: halaman login dan daftar" data-en-alt="J-Cafe: login and sign up page" width="293" height="633" loading="lazy"></figure>
+      <figure class="screen"><img src="assets/jcafe-home.jpg" alt="J-Cafe: beranda dengan kopi terbaik minggu ini dan rekomendasi menu" data-en-alt="J-Cafe: home with this week's best coffee and menu recommendations" width="293" height="633" loading="lazy"></figure>
+      <figure class="screen"><img src="assets/jcafe-menu.jpg" alt="J-Cafe: katalog menu kopi dengan harga dan tombol tambah" data-en-alt="J-Cafe: coffee menu catalog with prices and add buttons" width="293" height="633" loading="lazy"></figure>
+      <figure class="screen"><img src="assets/jcafe-order.jpg" alt="J-Cafe: keranjang berisi pesanan dan total harga" data-en-alt="J-Cafe: cart with orders and total price" width="292" height="633" loading="lazy"></figure>
+      <figure class="screen"><img src="assets/jcafe-payment.jpg" alt="J-Cafe: halaman pembayaran dengan alamat kafe dan rincian biaya" data-en-alt="J-Cafe: payment page with café address and cost breakdown" width="292" height="633" loading="lazy"></figure>
+      <figure class="screen"><img src="assets/jcafe-struk.jpg" alt="J-Cafe: struk transaksi berhasil" data-en-alt="J-Cafe: successful transaction receipt" width="294" height="638" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="Ordering flow">Alur pemesanan</h2>
+    <ol class="steps">
+      <li class="rv"><b>01</b><h3>Login</h3><p data-en="Sign in or create a new account from a single page.">Masuk atau daftar akun baru dari satu halaman.</p></li>
+      <li class="rv"><b>02</b><h3 data-en="Home">Beranda</h3><p data-en="This week&#39;s best coffee and recommended menu items.">Kopi terbaik minggu ini dan menu rekomendasi.</p></li>
+      <li class="rv"><b>03</b><h3 data-en="Menu catalog">Katalog menu</h3><p data-en="The menu is split into Coffee, Snacks, and Meals, complete with prices.">Menu dibagi jadi Kopi, Snack, dan Makanan, lengkap dengan harga.</p></li>
+      <li class="rv"><b>04</b><h3 data-en="Cart">Keranjang</h3><p data-en="Check quantities, remove items, and see the total price.">Cek jumlah pesanan, hapus item, dan lihat total harga.</p></li>
+      <li class="rv"><b>05</b><h3 data-en="Payment">Pembayaran</h3><p data-en="Nearest café location, delivery address, and cost breakdown.">Lokasi kafe terdekat, alamat antar, dan rincian biaya.</p></li>
+      <li class="rv"><b>06</b><h3 data-en="Receipt">Struk</h3><p data-en="Proof of a successful transaction that can be shared.">Bukti transaksi berhasil yang bisa dibagikan.</p></li>
+    </ol>
+  </section>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="Tools used">Alat yang dipakai</h2>
+    <ul class="tools rv">
+      <li><img src="assets/tools/figma.svg" alt="" width="36" height="36">Figma</li>
+    </ul>
+  </section>
+
+  <nav class="detail-end rv" aria-label="Navigasi proyek" data-en-aria-label="Project navigation">
+    <a class="btn ghost" href="projects.html" data-en="<span aria-hidden=true>←&nbsp;</span> All projects"><span aria-hidden="true">←&nbsp;</span> Semua proyek</a>
+    <a class="btn primary" href="https://www.figma.com/design/v6lZhGyBujb4ULgkrUY9Dt/23410100005_POSApp_UAS_2025?node-id=0-1" target="_blank" rel="noopener" data-en="Open in Figma <span aria-hidden=true>&nbsp;↗</span><span class=sr>(new tab)</span>">Buka di Figma <span aria-hidden="true">&nbsp;↗</span><span class="sr">(tab baru)</span></a>
+  </nav>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="year">2026</span> Jeremiah Reeno De Satria Kurniawan Siauw</span>
+  <a href="index.html" data-en="Home">Beranda</a>
+</footer>
+
+<!-- Popup prototype Figma. Link Figma harus diset "Anyone with the link can view", kalau tidak, isi popup akan diminta login. -->
+<dialog class="cv-dialog figma-dialog" id="figmaJcafe" aria-labelledby="figmaTitle">
+  <div class="cv-bar">
+    <h2 id="figmaTitle">J-Cafe · Figma</h2>
+    <div class="cv-actions">
+      <a class="btn ghost sm" href="https://www.figma.com/design/v6lZhGyBujb4ULgkrUY9Dt/23410100005_POSApp_UAS_2025?node-id=0-1" target="_blank" rel="noopener" data-en="Open in Figma<span class=sr> (new tab)</span>">Buka di Figma<span class="sr"> (tab baru)</span></a>
+      <button type="button" class="btn ghost sm" data-close data-en="Close">Tutup</button>
+    </div>
+  </div>
+  <div class="figma-body" data-lenis-prevent>
+    <iframe title="Desain Figma J-Cafe" data-en-title="J-Cafe Figma design" data-src="https://embed.figma.com/design/v6lZhGyBujb4ULgkrUY9Dt/23410100005_POSApp_UAS_2025?node-id=0-1&amp;embed-host=share" allowfullscreen></iframe>
+  </div>
+</dialog>
+
+<script src="i18n.js?v=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="script.js?v=6" defer></script>
+</body>
+</html>

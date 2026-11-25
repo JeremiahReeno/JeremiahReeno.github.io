@@ -1,0 +1,18 @@
+# Skill & pengaturan Claude Code (bukan bagian situs)
+.claude/
+
+# Hasil buat-folder-upload.py (dibuat ulang kapan saja)
+siap-upload/
+portofolio-siap-upload.zip
+
+# File lama / dobel yang tidak dipakai halaman
+assets/bug.png
+CV Jeremiah  IT.jpg
+foto jeremiah.jpg.jpeg
+
+# File sistem & editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+__pycache__/

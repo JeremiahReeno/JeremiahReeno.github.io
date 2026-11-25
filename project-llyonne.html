@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="Llyonne Store · Game Top-Up Website | Jeremiah Reeno Siauw">Llyonne Store · Website Top-Up Game | Jeremiah Reeno Siauw</title>
+<meta name="description" content="Llyonne Store: website top-up game otomatis berbasis Laravel 13 dengan pembayaran Midtrans dan pengiriman item otomatis lewat Digiflazz." data-en-content="Llyonne Store: an automated game top-up website built with Laravel 13, with Midtrans payments and automatic item delivery through Digiflazz.">
+<link rel="canonical" href="https://jeremiah-portofolio.netlify.app/project-llyonne.html">
+<meta property="og:url" content="https://jeremiah-portofolio.netlify.app/project-llyonne.html">
+<meta property="og:image" content="https://jeremiah-portofolio.netlify.app/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0a0f1e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=25">
+<script>(function(d){d.classList.add('js');setTimeout(function(){d.classList.add('anim-off')},4000);
+/* Tema: pilihan tersimpan, kalau belum ada ikut pengaturan perangkat. Dipasang sebelum halaman tampil supaya tidak berkedip. */
+var t;try{t=localStorage.getItem('theme')}catch(e){}
+if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+d.setAttribute('data-theme',t)})(document.documentElement)</script>
+</head>
+<body class="sub">
+
+<div id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="brand">Jeremiah Reeno</a>
+  <div class="nav-end">
+    <nav class="links" id="links" aria-label="Navigasi utama" data-en-aria-label="Main navigation">
+      <a href="index.html#about" data-en="About me">Tentang saya</a>
+      <a href="index.html#skills" data-en="Skills">Keahlian</a>
+      <a href="index.html#journey" data-en="Journey">Riwayat</a>
+      <a href="index.html#works" aria-current="page" data-en="Portfolio">Portofolio</a>
+      <a href="index.html#contact" class="pill" data-en="Contact">Kontak</a>
+    </nav>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Ganti ke tema terang">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <div class="lang" role="group" aria-label="Pilih bahasa" data-en-aria-label="Choose language">
+      <button type="button" data-lang="id" aria-pressed="true" lang="id" title="Bahasa Indonesia">ID</button>
+      <button type="button" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Buka menu" data-en-aria-label="Open menu" aria-expanded="false" aria-controls="links"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <header class="page-head detail-head">
+    <a class="crumb" href="projects.html" data-en="<span aria-hidden=true>←</span> Back to Projects"><span aria-hidden="true">←</span> Kembali ke Proyek</a>
+    <p class="label" data-en="Full-stack web e-commerce · Buyer &amp; admin">Web e-commerce full-stack · Pembeli & admin</p>
+    <h1 class="page-title">Llyonne Store</h1>
+    <p class="lead" data-en="An online game top-up store. Buyers pick a game, enter their account ID, choose an amount, then pay. Once payment is complete, the item is sent to the game account automatically, with no admin involved. Admins get a panel to manage the catalog, prices, orders, and sales reports.">Toko top-up game online. Pembeli memilih game, mengisi ID akun, memilih nominal, lalu membayar. Setelah pembayaran lunas, item dikirim otomatis ke akun game tanpa campur tangan admin. Admin punya panel untuk mengelola katalog, harga, pesanan, dan laporan penjualan.</p>
+    <div class="feature-cta">
+      <a class="btn primary" href="https://github.com/dionisiusnp/topup-game" target="_blank" rel="noopener" data-en="View repo on GitHub <span aria-hidden=true>&nbsp;↗</span><span class=sr>(new tab)</span>">Lihat repo di GitHub <span aria-hidden="true">&nbsp;↗</span><span class="sr">(tab baru)</span></a>
+    </div>
+    <dl class="facts">
+      <div><dt data-en="Role">Peran</dt><dd>Developer</dd></div>
+      <div><dt data-en="Year">Tahun</dt><dd>2026</dd></div>
+      <div><dt>Status</dt><dd><span class="status" data-en="In development">Dalam pengembangan</span></dd></div>
+      <div><dt data-en="Type">Jenis</dt><dd data-en="Collaborative project">Proyek kolaboratif</dd></div>
+    </dl>
+  </header>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="Technology">Teknologi</h2>
+    <ul class="tools rv">
+      <li><img src="assets/tools/php.svg" alt="" width="36" height="36">PHP 8.4</li>
+      <li><img src="assets/tools/laravel.svg" alt="" width="36" height="36">Laravel 13</li>
+      <li><span class="ti" aria-hidden="true">B</span><span>Blade<small data-en="Laravel templates">Template Laravel</small></span></li>
+      <li><img src="assets/tools/tailwind.svg" alt="" width="36" height="36">Tailwind CSS v4</li>
+      <li><img src="assets/tools/vite.svg" alt="" width="36" height="36">Vite</li>
+      <li><img src="assets/tools/javascript.svg" alt="" width="36" height="36">JavaScript</li>
+      <li><img src="assets/tools/mysql.svg" alt="" width="36" height="36">MySQL</li>
+      <li><span class="ti" aria-hidden="true">M</span><span>Midtrans Snap<small data-en="Payments">Pembayaran</small></span></li>
+      <li><span class="ti" aria-hidden="true">D</span><span>Digiflazz API<small data-en="Product supplier">Supplier produk</small></span></li>
+      <li><img src="assets/tools/brevo.svg" alt="" width="36" height="36"><span>Brevo<small>Email SMTP</small></span></li>
+      <li><span class="ti" aria-hidden="true">Q</span><span>Laravel Queue<small data-en="Database driver">Driver database</small></span></li>
+      <li><span class="ti" aria-hidden="true">PU</span><span>PHPUnit<small data-en="530 automated tests">530 tes otomatis</small></span></li>
+      <li><span class="ti" aria-hidden="true">L</span>Laragon</li>
+      <li><img src="assets/tools/git.svg" alt="" width="36" height="36">Git</li>
+      <li><img src="assets/tools/github.svg" alt="" width="36" height="36">GitHub</li>
+    </ul>
+  </section>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="Main features">Fitur utama</h2>
+    <div class="feat-grid">
+      <div class="rv">
+        <h3 data-en="Buyer side">Sisi pembeli</h3>
+        <ul class="points">
+          <li data-en="A catalog of 39 games with covers, banners, live search, and a &quot;Popular now&quot; section.">Katalog 39 game dengan cover, banner, pencarian langsung, dan bagian "Populer sekarang".</li>
+          <li data-en="An account ID form that adapts to each game: text fields, server dropdowns, and field separators.">Form ID akun yang menyesuaikan tiap game: kolom teks, dropdown server, dan pemisah antar kolom.</li>
+          <li data-en="Payment via QRIS, e-wallets (GoPay, ShopeePay), and bank virtual accounts.">Pembayaran QRIS, e-wallet (GoPay, ShopeePay), dan virtual account bank.</li>
+          <li data-en="Promo codes, order tracking without logging in, a price list, and an FAQ.">Kode promo, cek status pesanan tanpa login, daftar harga, dan FAQ.</li>
+          <li data-en="Buyer accounts with order history and email verification.">Akun pembeli dengan riwayat pesanan dan verifikasi email.</li>
+          <li data-en="Responsive layout tested on phones, a dark theme, and a header that stays visible while scrolling.">Tampilan responsif (diuji di HP), tema gelap, dan header yang tetap terlihat saat scroll.</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3 data-en="Admin side">Sisi admin</h3>
+        <ul class="points">
+          <li data-en="Manage games, products, banners, promo codes, and payment methods.">Kelola game, produk, banner, kode promo, dan metode pembayaran.</li>
+          <li data-en="Price sync from the supplier and per-game profit margin settings.">Sinkronisasi harga dari supplier dan pengaturan margin keuntungan per game.</li>
+          <li data-en="Sales reports, per-order details, and the supplier balance on the dashboard.">Laporan penjualan, detail per pesanan, dan saldo supplier di dashboard.</li>
+          <li data-en="Search on the product and game pages, plus admin login with two-factor authentication.">Pencarian di halaman produk dan game, serta login admin dengan autentikasi dua faktor.</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3 data-en="System side">Sisi sistem</h3>
+        <ul class="points">
+          <li data-en="Automatic item delivery through a queue, plus a re-check job for stuck orders.">Pengiriman item otomatis lewat antrean (queue) dan job pemeriksaan ulang untuk pesanan yang tertahan.</li>
+          <li data-en="Notifications when the supplier balance runs low or a delivery fails.">Notifikasi saat saldo supplier rendah atau pengiriman gagal.</li>
+          <li data-en="Scheduled database backups.">Pencadangan database terjadwal.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="What I worked on">Yang saya kerjakan</h2>
+    <ul class="points rv">
+      <li data-en="Designed the complete flow, from the catalog to automatic item delivery.">Merancang alur lengkap dari katalog sampai pengiriman item otomatis.</li>
+      <li data-en="Integrated two third-party APIs (payments and supplier), including webhook handling and failed orders.">Mengintegrasikan dua API pihak ketiga (pembayaran dan supplier) beserta penanganan webhook dan pesanan yang gagal.</li>
+      <li data-en="Built the admin panel and the price margin system.">Membangun panel admin dan sistem margin harga.</li>
+      <li data-en="Designed a responsive buyer interface with a consistent color system.">Merancang antarmuka pembeli yang responsif dengan sistem warna yang konsisten.</li>
+      <li data-en="Wrote automated tests and paid attention to security: input validation, email verification, and two-factor authentication.">Menulis pengujian otomatis dan memperhatikan keamanan: validasi input, verifikasi email, dan autentikasi dua faktor.</li>
+    </ul>
+  </section>
+
+  <section class="detail-sec">
+    <h2 class="h3 rv" data-en="Result">Hasil</h2>
+    <!-- Ganti kotak ini dengan screenshot: <div class="screens"> berisi <figure class="screen"><img src="assets/llyonne-....jpg" alt="..."></figure> -->
+    <div class="result-empty rv" data-en="Llyonne Store screenshots coming soon">Tampilan Llyonne Store menyusul</div>
+  </section>
+
+  <nav class="detail-end rv" aria-label="Navigasi proyek" data-en-aria-label="Project navigation">
+    <a class="btn ghost" href="projects.html" data-en="<span aria-hidden=true>←&nbsp;</span> All projects"><span aria-hidden="true">←&nbsp;</span> Semua proyek</a>
+    <a class="btn primary" href="https://github.com/dionisiusnp/topup-game" target="_blank" rel="noopener" data-en="View repo on GitHub <span aria-hidden=true>&nbsp;↗</span><span class=sr>(new tab)</span>">Lihat repo di GitHub <span aria-hidden="true">&nbsp;↗</span><span class="sr">(tab baru)</span></a>
+  </nav>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="year">2026</span> Jeremiah Reeno De Satria Kurniawan Siauw</span>
+  <a href="index.html" data-en="Home">Beranda</a>
+</footer>
+
+<script src="i18n.js?v=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="script.js?v=6" defer></script>
+</body>
+</html>
